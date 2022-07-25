@@ -1,0 +1,21 @@
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.println(suma(3, 7, 5 ));
+        Coche miCoche = new Coche();
+        miCoche.aumentarPuertas();
+        System.out.println(miCoche.numeroPuertas);
+    }
+    public static int suma(int a, int b, int c){
+        int resultado;
+        resultado = a + b + c;
+        return resultado;
+    }
+}
+
+class Coche {
+    public int numeroPuertas = 0;
+    public void aumentarPuertas() {
+        this.numeroPuertas++;
+    }
+}
